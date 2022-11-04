@@ -6,6 +6,8 @@ import { AppComponent } from './app.component';
 import { FormsModule } from '@angular/forms';
 import { HttpClientModule } from "@angular/common/http";
 import { ProductsModule } from './products/products.module';
+import { ProductListComponent } from './products/product-list/product-list.component';
+import { SharedModule } from './shared/shared.module';
 
 @NgModule({
   declarations: [
@@ -16,7 +18,8 @@ import { ProductsModule } from './products/products.module';
     AppRoutingModule,
     FormsModule,
     HttpClientModule,
-    ProductsModule
+    ProductsModule,
+    SharedModule
   ],
   providers: [],
   bootstrap: [AppComponent]
